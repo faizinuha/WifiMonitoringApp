@@ -1,0 +1,49 @@
+<Window x:Class="WifiMonitoringApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WiFi Monitoring App" Height="600" Width="800">
+    <Grid>
+        <!-- Grid untuk layout -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <TextBlock Grid.Row="0" Text="WiFi Monitoring App" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="10"/>
+
+        <!-- Daftar WiFi -->
+        <GroupBox Grid.Row="1" Header="Daftar WiFi" Margin="10">
+            <ListView x:Name="WifiList">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="SSID" DisplayMemberBinding="{Binding SSID}" Width="200"/>
+                        <GridViewColumn Header="IP Address" DisplayMemberBinding="{Binding IPAddress}" Width="150"/>
+                        <GridViewColumn Header="Signal Strength" DisplayMemberBinding="{Binding SignalStrength}" Width="150"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </GroupBox>
+
+        <!-- Daftar Pengguna WiFi -->
+        <GroupBox Grid.Row="2" Header="Daftar Pengguna WiFi" Margin="10">
+            <ListView x:Name="UserList">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Device Name" DisplayMemberBinding="{Binding DeviceName}" Width="200"/>
+                        <GridViewColumn Header="MAC Address" DisplayMemberBinding="{Binding MacAddress}" Width="150"/>
+                        <GridViewColumn Header="Status" DisplayMemberBinding="{Binding IsAllowed}" Width="100"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </GroupBox>
+
+        <!-- Tombol Aksi -->
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button x:Name="RefreshButton" Content="Refresh" Width="100" Margin="5" Click="RefreshButton_Click"/>
+            <Button x:Name="BlockButton" Content="Blokir Perangkat" Width="150" Margin="5" Click="BlockButton_Click"/>
+            <Button x:Name="AddUserButton" Content="Tambah Pengguna" Width="150" Margin="5" Click="AddUserButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,5 @@
+C:\Users\User\Documents\L\WifiMonitoringApp\WifiMonitoringApp.Tests\obj\Debug\net9.0\WifiMonitoringApp.Tests.csproj.AssemblyReference.cache
+C:\Users\User\Documents\L\WifiMonitoringApp\WifiMonitoringApp.Tests\obj\Debug\net9.0\WifiMonitoringApp.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\L\WifiMonitoringApp\WifiMonitoringApp.Tests\obj\Debug\net9.0\WifiMonitoringApp.Tests.AssemblyInfoInputs.cache
+C:\Users\User\Documents\L\WifiMonitoringApp\WifiMonitoringApp.Tests\obj\Debug\net9.0\WifiMonitoringApp.Tests.AssemblyInfo.cs
+C:\Users\User\Documents\L\WifiMonitoringApp\WifiMonitoringApp.Tests\obj\Debug\net9.0\WifiMonitoringApp.Tests.csproj.CoreCompileInputs.cache
